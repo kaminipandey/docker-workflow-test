@@ -1,7 +1,6 @@
 name: Push test package (public)
 on: push
 
-
 jobs:
  all:
   runs-on: self-hosted
