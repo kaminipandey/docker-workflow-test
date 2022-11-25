@@ -6,7 +6,7 @@ jobs:
   runs-on: self-hosted
   
   steps:
-   - name: Login to GitHub container Registry
+   - name: Login to GitHub container Registry test
      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login https://docker.pkg.github.com -u ${{ github.actor }} --password-stdin 
    - name: pull nats
      run: docker pull centos
